@@ -18,6 +18,7 @@
     <modules>
         <module>rest-spring-core</module>
         <module>rest-spring-front</module>
+        <module>rest-spring-presentation</module>
     </modules>
     <profiles>
         <profile>
@@ -30,7 +31,7 @@
                 <plugins>
                     <plugin>
                         <artifactId>maven-war-plugin</artifactId>
-                        <version>2.4</version>
+                        <version>3.2.0</version>
                         <configuration>
                             <outputDirectory>target</outputDirectory>
                             <warName>ROOT</warName>

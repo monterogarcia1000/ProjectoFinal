@@ -1,6 +1,7 @@
 package com.learningjava.rest.spring.front.controller;
 
 import com.learningjava.rest.spring.core.Greeting;
+import com.learningjava.rest.spring.core.Restaurant;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -36,6 +37,11 @@ public class ApiRestController {
                     String.format(template, i)));
         }
         return arrData;
+    }
+
+    @RequestMapping(path = "/restaurantes", method = RequestMethod.GET)
+    public List<Restaurant> listaRestaurantes(){
+        return null;
     }
 
 }
