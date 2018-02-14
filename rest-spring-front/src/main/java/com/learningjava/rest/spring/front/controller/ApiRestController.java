@@ -1,5 +1,6 @@
 package com.learningjava.rest.spring.front.controller;
 
+import com.learningjava.rest.spring.core.ConexionBaseDeDatos;
 import com.learningjava.rest.spring.core.Greeting;
 import com.learningjava.rest.spring.core.Restaurant;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,7 +42,8 @@ public class ApiRestController {
 
     @RequestMapping(path = "/restaurantes", method = RequestMethod.GET)
     public List<Restaurant> listaRestaurantes(){
-        return null;
+        ConexionBaseDeDatos conexionBaseDeDatos = new ConexionBaseDeDatos();
+            return conexionBaseDeDatos.readRestaurant("");
     }
 
 }

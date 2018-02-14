@@ -26,7 +26,7 @@ public class ConexionBaseDeDatos {
 
 
 //Le pasamos al lector de base de datos el parametro que queremos utilizar para buscar en nuestro formulario
-        public static ArrayList readRestaurant (String cercar){
+        public ArrayList readRestaurant (String cercar){
 
             ArrayList rst = new ArrayList();
 
