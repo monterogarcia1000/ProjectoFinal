@@ -1,12 +1,8 @@
 package com.learningjava.rest.spring.front.configuration;
 
-import com.learningjava.rest.spring.core.Restaurant;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
@@ -29,16 +25,11 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public FreeMarkerConfigurer freemarkerConfig() {
         FreeMarkerConfigurer freeMarkerConfigurer = new FreeMarkerConfigurer();
-        freeMarkerConfigurer.setTemplateLoaderPath("/WEB-INF/views/ftl/");
+        freeMarkerConfigurer.setTemplateLoaderPath("/templates/");
         return freeMarkerConfigurer;
     }
 
-    /*
-    @RequestMapping(value = "/rest/api/restaurantes", method = RequestMethod.GET)
-    public String init(@ModelAttribute("model") ModelMap model) {
-        model.addAttribute("restaurantes", Restaurant);
-        return "index";
-    }
-    */
+
+
 
 }
