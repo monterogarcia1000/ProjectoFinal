@@ -1,6 +1,6 @@
 package com.rest.spring.front.controlador;
 
-import com.rest.spring.core.ConexionBaseDeDatos;
+import com.rest.spring.core.basededatos.ConexionBaseDeDatos;
 import com.rest.spring.core.Restaurant;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

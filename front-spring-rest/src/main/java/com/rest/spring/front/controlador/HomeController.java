@@ -1,6 +1,6 @@
 package com.rest.spring.front.controlador;
 
-import com.rest.spring.core.ConexionBaseDeDatos;
+import com.rest.spring.core.basededatos.ConexionBaseDeDatos;
 import com.rest.spring.core.Restaurant;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

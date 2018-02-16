@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.rest.spring.core.ConexionBaseDeDatos" %>
+<%@ page import="com.rest.spring.core.basededatos.ConexionBaseDeDatos" %>
 <%@ page import="com.rest.spring.core.Restaurant" %>
 <%@page import="java.util.*" %>
 <%@page import="java.lang.String" %>

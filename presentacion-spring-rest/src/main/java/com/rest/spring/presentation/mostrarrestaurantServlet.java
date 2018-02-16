@@ -1,6 +1,6 @@
 package com.rest.spring.presentation;
 
-import com.rest.spring.core.ConexionBaseDeDatos;
+import com.rest.spring.core.basededatos.ConexionBaseDeDatos;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

@@ -1,4 +1,6 @@
-package com.rest.spring.core;
+package com.rest.spring.core.basededatos;
+
+import com.rest.spring.core.Restaurant;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
