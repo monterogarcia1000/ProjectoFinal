@@ -4,17 +4,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
+
 /**
  * com.learningjava.rest.spring.front
  * Class
  * By berto. 12/02/2018
  */
 @SpringBootApplication
+@ComponentScan(basePackages = "com.rest.spring.front")
 public class SpringBootWebApplication extends SpringBootServletInitializer {
-    @Override
+   /* @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(SpringBootWebApplication.class);
-    }
+    }*/
     public static void main(String[] args) {
         SpringApplication.run(SpringBootWebApplication.class, args);
     }
