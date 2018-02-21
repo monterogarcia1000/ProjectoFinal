@@ -18,7 +18,6 @@
     <modules>
         <module>core-spring-rest</module>
         <module>front-spring-rest</module>
-        <module>presentacion-spring-rest</module>
     </modules>
     <profiles>
         <profile>
