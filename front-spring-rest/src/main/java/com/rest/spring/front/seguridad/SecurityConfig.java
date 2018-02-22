@@ -29,21 +29,24 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-/*	  http.csrf().disable()
-          .authorizeRequests()
-	  	.antMatchers(RestApiController.REST_API_MAPPING+"/**").hasRole("ADMIN")
-		.and().httpBasic().realmName(REALM).authenticationEntryPoint(getBasicAuthEntryPoint());
-*/
         http.authorizeRequests()
-                .antMatchers("/", "/home").permitAll()
-                .anyRequest().authenticated()
+                .antMatchers("/").permitAll()
+                .antMatchers("/users/**").hasAuthority("ADMIN")
+                .anyRequest().fullyAuthenticated()
                 .and()
-            .formLogin()
+                .formLogin()
                 .loginPage("/login")
+                .failureUrl("/login?error")
+                .usernameParameter("name")
                 .permitAll()
                 .and()
-            .logout()
-                .permitAll();
+                .logout()
+                .logoutUrl("/logout")
+                .deleteCookies("remember-me")
+                .logoutSuccessUrl("/")
+                .permitAll()
+                .and()
+                .rememberMe();
     }
 
     @Bean
