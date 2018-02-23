@@ -15,8 +15,8 @@
         <!-- Dependencia para utilizar la base de datos de oracle -->
         <dependency>
             <groupId>com.oracle</groupId>
-            <artifactId>ojdbc8</artifactId>
-            <version>12.2.0.1</version>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.3</version>
         </dependency>
         <!-- Dependencia para controlar la persistencia y el mapeo objeto/relacioanl -->
         <dependency>
