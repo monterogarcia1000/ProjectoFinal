@@ -15,7 +15,7 @@ public class ConexionBaseDeDatos {
     //Ni zorra de lo que estoy haciendo
     private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
 
-    private static final String THIN_URL = "jdbc:oracle:thin:@35.205.41.45:1521:XE";
+    private static final String THIN_URL = "jdbc:oracle:thin:@35.180.32.114:1521:XE";
 
     private static final String USER = "usuari";
 
